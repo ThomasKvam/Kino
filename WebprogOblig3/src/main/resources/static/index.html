@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebProgOblig3</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="//code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="index.js"></script>
+    <script src="login.js"></script>
+</head>
+
+<body style="background: lightgrey">
+
+<div class="container" style="padding-top: 50px" >
+    <h1 class="row" style="justify-content: center; padding-bottom: 30px">Kinorama i Oslo</h1>
+    <a href="/login.html" class="btn btn-primary" style="margin: 15px 5px;" >Logg Inn</a><span id="feil" style="color:
+    red"></span>
+    <div class="row">
+        <div class="col-sm-5">
+            <h2>Bestilling av Kinobiletter</h2>
+            <label for="filmer" style="font-size: 18px">Velg Film: </label>
+            <select id="filmer">
+                <option> </option>
+                <option>Tennet</option>
+                <option>Cast Away</option>
+                <option>Soul</option>
+                <option>Her</option>
+                <option>The Notebook</option>
+                <option>Bad Neighbours</option>
+            </select> <span id="error-filmer" style="color: red"></span> <br> <br>
+
+            <label for="antall">Antall billetter</label>
+            <input type="number" id="antall" style="width: 60px; font-size: 18px" value="" min="1"> <span
+                id="error-antall" style="color: red"></span><br>
+<br>
+
+            <table>
+                <tr><td>Fornavn</td><td><input type="text" id="fornavn"/><span id="error-fornavn"
+                                                                   style="color: red"></span></td></tr>
+                <tr><td>Etternavn</td><td><input type="text" id="etternavn"/><span id="error-etternavn"
+                                                                       style="color: red"></span></td></tr>
+                <tr><td>Telefonnr</td><td><input type="text" id="nummer"/><span id="error-nummer"
+                                                                    style="color: red"></span></td></tr>
+                <tr><td>E-post</td><td><input type="text" id="epost"/><span id="error-epost"
+                                                                style="color: red"></span></td></tr>
+                <tr><td><button class="btn-primary" onclick="lagreBillett(), hentBilletter()"
+                                style="margin: 15px 5px;">Kjøp billett</button></td></tr>
+            </table>
+        </div>
+
+        <div class="col-sm-7">
+            <h2>Alle Billetter</h2>
+
+            <div style="align-content: space-evenly" class="table table-striped" id="alleBilletter"></div>
+
+
+            <button class="btn-danger" onclick="clearArray()">Slett alle billettene</button>
+            <button class="btn-primary" onclick="loggUt()">Logg Ut</button>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
