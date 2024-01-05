@@ -4,7 +4,7 @@ OsloMet brukernavn: s333897
 
 GitHub brukernavn: s333897
 
-GitHub repo URL: https://github.com/DATA1700/oblig-3-s333897
+GitHub repo URL: https://github.com/ThomasKvam/Projects/edit/main/WebprogOblig3
 
 URL til Heroku app: https://oblig3-webprog-s333897.herokuapp.com/ 
 
